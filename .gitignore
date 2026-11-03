@@ -1,0 +1,12 @@
+# Compiled binaries and object files
+*.o
+*.out
+*.so
+*.a
+01-memory-and-pointers/memory_inspector
+
+# Editor and OS files
+.vscode/
+.DS_Store
+*~
+*.swp
