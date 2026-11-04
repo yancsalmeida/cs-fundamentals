@@ -27,3 +27,11 @@ Discrete-time tank volume balance and process telemetry analyzer with automated 
 ```bash
 python3 02-algorithms-and-telemetry-python/tank_telemetry.py -v
 ```
+
+---
+
+## Author
+
+**Yan Almeida**
+- LinkedIn: [linkedin.com/in/yancsa](https://www.linkedin.com/in/yancsa/)
+- GitHub: [github.com/yancsalmeida](https://github.com/yancsalmeida)
