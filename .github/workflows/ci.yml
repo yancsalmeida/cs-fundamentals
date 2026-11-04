@@ -1,0 +1,24 @@
+name: C & Python CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-verify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build and run 01-memory-and-pointers (C11)
+        run: |
+          make -C 01-memory-and-pointers clean
+          make -C 01-memory-and-pointers CFLAGS="-Wall -Wextra -Werror -O2 -std=c11" run
+          make -C 01-memory-and-pointers clean
+
+      - name: Run 02-algorithms-and-telemetry-python unit tests
+        run: python3 02-algorithms-and-telemetry-python/tank_telemetry.py -v
