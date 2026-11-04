@@ -1,0 +1,150 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/uuu/Documents/Projetos/cs-fundamentals/03-concurrency-and-synchronization-csharp/tests/ConcurrencyLab.Tests/ConcurrencyLab.Tests.csproj": {}
+  },
+  "projects": {
+    "/home/uuu/Documents/Projetos/cs-fundamentals/03-concurrency-and-synchronization-csharp/src/ConcurrencyLab.Core/ConcurrencyLab.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/uuu/Documents/Projetos/cs-fundamentals/03-concurrency-and-synchronization-csharp/src/ConcurrencyLab.Core/ConcurrencyLab.Core.csproj",
+        "projectName": "ConcurrencyLab.Core",
+        "projectPath": "/home/uuu/Documents/Projetos/cs-fundamentals/03-concurrency-and-synchronization-csharp/src/ConcurrencyLab.Core/ConcurrencyLab.Core.csproj",
+        "packagesPath": "/home/uuu/.nuget/packages/",
+        "outputPath": "/home/uuu/Documents/Projetos/cs-fundamentals/03-concurrency-and-synchronization-csharp/src/ConcurrencyLab.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/uuu/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/uuu/.dotnet/sdk/8.0.427/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/uuu/Documents/Projetos/cs-fundamentals/03-concurrency-and-synchronization-csharp/tests/ConcurrencyLab.Tests/ConcurrencyLab.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/uuu/Documents/Projetos/cs-fundamentals/03-concurrency-and-synchronization-csharp/tests/ConcurrencyLab.Tests/ConcurrencyLab.Tests.csproj",
+        "projectName": "ConcurrencyLab.Tests",
+        "projectPath": "/home/uuu/Documents/Projetos/cs-fundamentals/03-concurrency-and-synchronization-csharp/tests/ConcurrencyLab.Tests/ConcurrencyLab.Tests.csproj",
+        "packagesPath": "/home/uuu/.nuget/packages/",
+        "outputPath": "/home/uuu/Documents/Projetos/cs-fundamentals/03-concurrency-and-synchronization-csharp/tests/ConcurrencyLab.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/uuu/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/uuu/Documents/Projetos/cs-fundamentals/03-concurrency-and-synchronization-csharp/src/ConcurrencyLab.Core/ConcurrencyLab.Core.csproj": {
+                "projectPath": "/home/uuu/Documents/Projetos/cs-fundamentals/03-concurrency-and-synchronization-csharp/src/ConcurrencyLab.Core/ConcurrencyLab.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "Shouldly": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/uuu/.dotnet/sdk/8.0.427/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

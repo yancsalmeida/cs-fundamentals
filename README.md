@@ -1,8 +1,8 @@
-# CS Fundamentals — Low-Level Systems (C11) & Algorithmic Modeling (Python)
+# CS Fundamentals — Low-Level Systems (C11), Concurrency (.NET 8) & Modeling (Python)
 
-[![C & Python CI](https://github.com/yancsalmeida/cs-fundamentals/actions/workflows/ci.yml/badge.svg)](https://github.com/yancsalmeida/cs-fundamentals/actions/workflows/ci.yml)
+[![CI](https://github.com/yancsalmeida/cs-fundamentals/actions/workflows/ci.yml/badge.svg)](https://github.com/yancsalmeida/cs-fundamentals/actions/workflows/ci.yml)
 
-Practical computer science and systems programming laboratories in **C11 (`gcc`)** and **Python 3** on **Linux (`x86_64`)**, exploring virtual memory layout, pointers, data structures, and discrete process telemetry modeling.
+Practical computer science and systems programming laboratories in **C11 (`gcc`)**, **C# (.NET 8)**, and **Python 3** on **Linux (`x86_64`)**, exploring virtual memory layout, pointers, multi-threaded concurrency primitives, and discrete process telemetry modeling.
 
 ---
 
@@ -26,6 +26,16 @@ Discrete-time tank volume balance and process telemetry analyzer with automated 
 
 ```bash
 python3 02-algorithms-and-telemetry-python/tank_telemetry.py -v
+```
+
+### 3. [`03-concurrency-and-synchronization-csharp`](./03-concurrency-and-synchronization-csharp) (`C# / .NET 8`)
+Multi-threaded concurrency patterns, thread synchronization, and asynchronous resource pooling with automated `xUnit` test suites:
+- **Producer-Consumer Queues:** Asynchronous lock-free bounded channels (`ChannelWorkQueue<T>`) vs. monitor-based condition signaling (`LockBasedWorkQueue<T>`).
+- **Read-Heavy Caching:** Non-blocking concurrent reads and atomic upgradeable write locks via `ReaderWriterLockSlim`.
+- **Resource Throttling:** Strict concurrency bounding and graceful exception/cancellation release via `SemaphoreSlim`.
+
+```bash
+dotnet test 03-concurrency-and-synchronization-csharp/ConcurrencyLab.sln
 ```
 
 ---

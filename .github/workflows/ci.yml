@@ -1,4 +1,4 @@
-name: C & Python CI
+name: CI
 
 on:
   push:
@@ -14,6 +14,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Setup .NET SDK 8.0
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
       - name: Build and run 01-memory-and-pointers (C11)
         run: |
           make -C 01-memory-and-pointers clean
@@ -22,3 +27,6 @@ jobs:
 
       - name: Run 02-algorithms-and-telemetry-python unit tests
         run: python3 02-algorithms-and-telemetry-python/tank_telemetry.py -v
+
+      - name: Run 03-concurrency-and-synchronization-csharp unit tests (.NET 8)
+        run: dotnet test 03-concurrency-and-synchronization-csharp/ConcurrencyLab.sln -c Release
