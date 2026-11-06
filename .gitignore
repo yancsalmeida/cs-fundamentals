@@ -5,8 +5,24 @@
 *.a
 01-memory-and-pointers/memory_inspector
 
+# .NET Build artifacts
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+
 # Editor and OS files
 .vscode/
+.idea/
 .DS_Store
 *~
 *.swp
