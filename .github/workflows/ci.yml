@@ -30,3 +30,7 @@ jobs:
 
       - name: Run 03-concurrency-and-synchronization-csharp unit tests (.NET 8)
         run: dotnet test 03-concurrency-and-synchronization-csharp/ConcurrencyLab.sln -c Release
+
+      - name: Run 04-zero-alloc-and-datastructures-csharp unit tests (.NET 8)
+        run: dotnet test 04-zero-alloc-and-datastructures-csharp/SystemsDataStructuresLab.sln -c Release
+

@@ -38,6 +38,16 @@ Multi-threaded concurrency patterns, thread synchronization, and asynchronous re
 dotnet test 03-concurrency-and-synchronization-csharp/ConcurrencyLab.sln
 ```
 
+### 4. [`04-zero-alloc-and-datastructures-csharp`](./04-zero-alloc-and-datastructures-csharp) (`C# / .NET 8`)
+Zero-allocation wire-protocol parsing and contiguous-memory data structures implemented from scratch:
+- **Zero-Allocation Parsing (`ReadOnlySpan<char>` & `ref struct`):** Delimiter-separated telemetry parser (`SpanTelemetryParser`) and stack-only line enumerator verified with `GC.GetAllocatedBytesForCurrentThread() == 0`.
+- **Circular Buffer (`RingBuffer<T>`):** Fixed-capacity contiguous ring buffer with $O(1)$ wrap-around overwrite, FIFO extraction, and `Span<T>` snapshot copying.
+- **Priority Queue & Graph Routing (`BinaryMinHeap` & `DijkstraRouter`):** Array-backed binary min-heap ($O(\log N)$ `SiftUp`/`SiftDown`) driving Dijkstra's shortest-path algorithm over weighted directed graphs.
+
+```bash
+dotnet test 04-zero-alloc-and-datastructures-csharp/SystemsDataStructuresLab.sln -c Release
+```
+
 ---
 
 ## Author
